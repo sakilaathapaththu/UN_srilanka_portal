@@ -150,28 +150,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* ----- NAVBAR BRAND MOBILE FIX ----- */
 
-/* allow long name to wrap instead of one line */
-.navbar-brand {
-    white-space: normal !important;
-}
-
-/* extra tweaks for very small screens */
-@media (max-width: 575.98px) {
-    .navbar-brand {
-        max-width: 80%;           /* leave space for hamburger button */
-    }
-
-    .brand-title {
-        font-size: 0.75rem;       /* smaller text */
-        line-height: 1.25;
-    }
-
-    .navbar-logo {
-        height: 38px;             /* slightly smaller logo */
-    }
-}
 /* ------- MOBILE NAVBAR FIX (keep other code as-is) ------- */
 @media (max-width: 575.98px) {
   /* Make brand + logo a flex item that can shrink */

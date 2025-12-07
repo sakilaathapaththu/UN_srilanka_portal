@@ -150,38 +150,46 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* ----- NAVBAR BRAND MOBILE FIX ----- */
 
-/* ------- MOBILE NAVBAR FIX (keep other code as-is) ------- */
+/* let brand text wrap by default */
+.navbar-brand {
+    white-space: normal !important;
+}
+
 @media (max-width: 575.98px) {
-  /* Make brand + logo a flex item that can shrink */
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-    flex: 1 1 auto;      /* take remaining width but allow shrink */
-    min-width: 0;        /* allow text to wrap */
-    white-space: normal; /* title can go to 2 lines */
-  }
+    /* keep brand + burger on ONE row */
+    .navbar {
+        flex-wrap: nowrap;
+    }
 
-  /* Logo a bit smaller on phones */
-  .navbar-logo {
-    height: 32px;
-    width: auto;
-    margin-right: 0.4rem;
-    flex-shrink: 0;
-  }
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        flex: 1 1 auto;          /* take remaining space but allow shrink */
+        min-width: 0;            /* allow text to wrap */
+        max-width: calc(100% - 56px); /* leave space for toggler */
+        margin-right: 0;
+    }
 
-  /* Long title: small, wraps nicely */
-  .brand-title {
-    font-size: 0.72rem;
-    line-height: 1.2;
-    white-space: normal;
-  }
+    .navbar-logo {
+        height: 32px;
+        width: auto;
+        margin-right: 0.4rem;
+        flex-shrink: 0;
+    }
 
-  /* Keep burger on same row, right side */
-  .navbar-toggler {
-    margin-left: 0.5rem;
-    flex-shrink: 0;
-  }
+    .brand-title {
+        font-size: 0.75rem;      /* smaller, can go to 2 lines */
+        line-height: 1.25;
+        white-space: normal;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        padding: 0.25rem 0.55rem;
+        flex-shrink: 0;
+    }
 }
 
 /* Hero */

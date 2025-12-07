@@ -172,6 +172,38 @@ h1, h2, h3, h4, h5, h6 {
         height: 38px;             /* slightly smaller logo */
     }
 }
+/* ------- MOBILE NAVBAR FIX (keep other code as-is) ------- */
+@media (max-width: 575.98px) {
+  /* Make brand + logo a flex item that can shrink */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;      /* take remaining width but allow shrink */
+    min-width: 0;        /* allow text to wrap */
+    white-space: normal; /* title can go to 2 lines */
+  }
+
+  /* Logo a bit smaller on phones */
+  .navbar-logo {
+    height: 32px;
+    width: auto;
+    margin-right: 0.4rem;
+    flex-shrink: 0;
+  }
+
+  /* Long title: small, wraps nicely */
+  .brand-title {
+    font-size: 0.72rem;
+    line-height: 1.2;
+    white-space: normal;
+  }
+
+  /* Keep burger on same row, right side */
+  .navbar-toggler {
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+  }
+}
 
 /* Hero */
 .hero-header {

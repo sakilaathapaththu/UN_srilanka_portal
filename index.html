@@ -34,70 +34,70 @@
 <body>
 
     <!-- Topbar Start -->
-
 <div class="container-fluid py-2 border-bottom">
+  <div class="container">
+    <div class="row">
+      <!-- Left side: Welcome + contact -->
+      <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+        <div class="d-inline-flex align-items-center flex-wrap justify-content-center justify-content-lg-start">
 
-        <div class="container">
-            <div class="row">
-                <!-- Left side: Welcome + contact -->
-                <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
+          <!-- Home + Welcome text (always visible) -->
+          <a class="text-decoration-none text-dark pe-3" href="index.html">
+            <i class="bi bi-house-door-fill me-2"></i>
+            Welcome to UN - Sri Lanka
+          </a>
 
-                        <!-- Home + Welcome text -->
-                        <a class="text-decoration-none text-dark pe-3" href="index.html">
-                            <i class="bi bi-house-door-fill me-2"></i>
-                            Welcome to UN - Sri Lanka
-                        </a>
+          <!-- Phone (hidden on mobile, visible ≥ md) -->
+          <span class="text-body d-none d-md-inline">|</span>
+          <a class="text-decoration-none text-body px-3 d-none d-md-inline-block" href="#!">
+            <i class="bi bi-telephone me-2"></i>+012 345 6789
+          </a>
 
-                        <span class="text-body">|</span>
-
-                        <!-- Phone -->
-                        <a class="text-decoration-none text-body px-3" href="#!">
-                            <i class="bi bi-telephone me-2"></i>+012 345 6789
-                        </a>
-
-                        <span class="text-body">|</span>
-
-                        <!-- Email -->
-                        <a class="text-decoration-none text-body px-3" href="#!">
-                            <i class="bi bi-envelope me-2"></i>info@example.com
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Right side: Language dropdown + social icons -->
-                <div class="col-md-6 text-center text-lg-end">
-                    <div class="d-inline-flex align-items-center">
-
-                        <!-- Language dropdown -->
-                        <div class="dropdown topbar-lang-dropdown me-2">
-                            <a class="text-body text-decoration-none dropdown-toggle topbar-lang-toggle"
-                                href="javascript:void(0)" id="langDropdown" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Language: English
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
-                                <li><a class="dropdown-item" href="javascript:void(0)" data-lang>English</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0)" data-lang>සිංහල</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0)" data-lang>தமிழ்</a></li>
-                            </ul>
-                        </div>
-
-                        <span class="text-body px-1">|</span>
-
-                        <!-- Social icons -->
-                        <a class="text-body px-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="text-body px-2" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="text-body px-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="text-body px-2" href="#!"><i class="fab fa-instagram"></i></a>
-                        <a class="text-body ps-2" href="#!"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-
-            </div>
+          <!-- Email (hidden on mobile, visible ≥ md) -->
+          <span class="text-body d-none d-md-inline">|</span>
+          <a class="text-decoration-none text-body px-3 d-none d-md-inline-block" href="#!">
+            <i class="bi bi-envelope me-2"></i>info@example.com
+          </a>
         </div>
+      </div>
+
+      <!-- Right side: Language dropdown + social icons -->
+      <div class="col-md-6 text-center text-lg-end">
+        <div class="d-inline-flex align-items-center flex-wrap justify-content-center justify-content-lg-end">
+
+          <!-- Language dropdown (always visible) -->
+          <div class="dropdown topbar-lang-dropdown me-2">
+            <a class="text-body text-decoration-none dropdown-toggle topbar-lang-toggle"
+               href="javascript:void(0)" id="langDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Language: English
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+              <li><a class="dropdown-item" href="javascript:void(0)" data-lang>English</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)" data-lang>සිංහල</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)" data-lang>தமிழ்</a></li>
+            </ul>
+          </div>
+
+          <!-- Divider + Social icons (hidden on mobile, visible ≥ md) -->
+          <span class="text-body px-1 d-none d-md-inline">|</span>
+
+          <div class="d-none d-md-inline-flex align-items-center">
+            <a class="text-body px-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+            <a class="text-body px-2" href="#!"><i class="fab fa-twitter"></i></a>
+            <a class="text-body px-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+            <a class="text-body px-2" href="#!"><i class="fab fa-instagram"></i></a>
+            <a class="text-body ps-2" href="#!"><i class="fab fa-youtube"></i></a>
+          </div>
+
+        </div>
+      </div>
+
     </div>
-    <!-- Topbar End -->
+  </div>
+</div>
+<!-- Topbar End -->
+
 
     <!-- Navbar Start -->
     <div class="container-fluid sticky-top bg-white shadow-sm">
@@ -225,8 +225,7 @@
                 <!-- Image side -->
                 <div class="col-lg-5 mb-5 mb-lg-0">
                     <div class="position-relative h-100 reveal-on-scroll">
-                        <img class="w-100 h-100 rounded shadow-lg about-main-img"
-                            src="img/Savitri-UN-SL-1200x550.jpg"
+                        <img class="w-100 h-100 rounded shadow-lg about-main-img" src="img/Savitri-UN-SL-1200x550.jpg"
                             alt="UN Sri Lanka working with communities" />
                         <div class="about-badge">
                             <span class="about-badge-title">Human Rights</span>
@@ -370,8 +369,7 @@
                     <article class="card service-story-card h-100 reveal-on-scroll">
                         <div class="position-relative">
                             <div class="service-top-bar"></div>
-                            <img src="img/UNDPLKA_UNV50.jpeg"
-                                class="card-img-top service-img"
+                            <img src="img/UNDPLKA_UNV50.jpeg" class="card-img-top service-img"
                                 alt="Monitoring human rights situation in communities">
                         </div>
                         <div class="card-body">
@@ -399,8 +397,7 @@
                         <div class="position-relative">
                             <div class="service-top-bar"></div>
                             <img src="img/481286072_945911347719703_6067448789519921219_n.jpg"
-                                class="card-img-top service-img"
-                                alt="Community dialogue and outreach">
+                                class="card-img-top service-img" alt="Community dialogue and outreach">
                         </div>
                         <div class="card-body">
                             <p class="service-category mb-2">
@@ -426,8 +423,7 @@
                     <article class="card service-story-card h-100 reveal-on-scroll delay-2">
                         <div class="position-relative">
                             <div class="service-top-bar"></div>
-                            <img src="img/UN-Volunteers-in-Sri-Lanka_2016.jpg"
-                                class="card-img-top service-img"
+                            <img src="img/UN-Volunteers-in-Sri-Lanka_2016.jpg" class="card-img-top service-img"
                                 alt="Human rights education event">
                         </div>
                         <div class="card-body">
@@ -471,8 +467,7 @@
                     <article class="card project-card h-100 slide-on-scroll from-left">
                         <div class="position-relative">
                             <div class="project-top-bar"></div>
-                            <img src="img/18138660108921608497.jpg"
-                                class="card-img-top project-img"
+                            <img src="img/18138660108921608497.jpg" class="card-img-top project-img"
                                 alt="Flood-affected community in Sri Lanka">
                         </div>
                         <div class="card-body">
@@ -480,7 +475,7 @@
                                 PROJECT UPDATE
                             </p>
                             <p class="project-meta-small mb-2">
-                                10 DECEMBER 2025  |  FLOOD RESPONSE – KALUTARA DISTRICT
+                                10 DECEMBER 2025 | FLOOD RESPONSE – KALUTARA DISTRICT
                             </p>
                             <h5 class="card-title mb-2">
                                 Supporting communities affected by floods in southern Sri Lanka
@@ -502,8 +497,7 @@
                     <article class="card project-card h-100 slide-on-scroll">
                         <div class="position-relative">
                             <div class="project-top-bar"></div>
-                            <img src="img/nayayama_10.png"
-                                class="card-img-top project-img"
+                            <img src="img/nayayama_10.png" class="card-img-top project-img"
                                 alt="Community dialogue in estate sector">
                         </div>
                         <div class="card-body">
@@ -511,7 +505,7 @@
                                 FIELD MISSION
                             </p>
                             <p class="project-meta-small mb-2">
-                                05 DECEMBER 2025  |  CENTRAL PROVINCE
+                                05 DECEMBER 2025 | CENTRAL PROVINCE
                             </p>
                             <h5 class="card-title mb-2">
                                 Dialogues on labour rights and living conditions in estate communities
@@ -533,8 +527,7 @@
                     <article class="card project-card h-100 slide-on-scroll from-right">
                         <div class="position-relative">
                             <div class="project-top-bar"></div>
-                            <img src="img/48979596077_5f0e3ccaa3_k.jpg"
-                                class="card-img-top project-img"
+                            <img src="img/48979596077_5f0e3ccaa3_k.jpg" class="card-img-top project-img"
                                 alt="Youth human rights workshop">
                         </div>
                         <div class="card-body">
@@ -542,7 +535,7 @@
                                 CAPACITY BUILDING
                             </p>
                             <p class="project-meta-small mb-2">
-                                28 NOVEMBER 2025  |  COLOMBO
+                                28 NOVEMBER 2025 | COLOMBO
                             </p>
                             <h5 class="card-title mb-2">
                                 Youth engagement on human rights, inclusion and non-discrimination
@@ -648,8 +641,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="gallery-item reveal-on-scroll delay-1">
                         <div class="gallery-img-wrapper">
-                            <img src="img/mnp09392 (1).jpg" class="img-fluid gallery-img"
-                                alt="Community consultation">
+                            <img src="img/mnp09392 (1).jpg" class="img-fluid gallery-img" alt="Community consultation">
                             <div class="gallery-overlay">
                                 <div class="gallery-caption">
                                     Consultation with communities
@@ -702,12 +694,11 @@
                 <!-- Article 1 -->
                 <div class="col-lg-4 col-md-6">
                     <article class="card article-card h-100 slide-on-scroll from-left">
-                        <img src="img/citbdclbexxt6rcdup8r.webp"
-                            class="card-img-top article-img"
+                        <img src="img/citbdclbexxt6rcdup8r.webp" class="card-img-top article-img"
                             alt="Article about floods and human rights impact">
                         <div class="card-body">
                             <p class="article-meta mb-1">
-                                STORY  |  08 DECEMBER 2025  |  SOUTHERN PROVINCE
+                                STORY | 08 DECEMBER 2025 | SOUTHERN PROVINCE
                             </p>
                             <h5 class="card-title mb-2">
                                 After the floods: protecting rights and dignity in recovery efforts
@@ -728,11 +719,10 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="card article-card h-100 slide-on-scroll">
                         <img src="img/key_dignitaries_touring_the_know_your_neethi_legal_aid_camp_in_badulla.jpeg"
-                            class="card-img-top article-img"
-                            alt="Article about access to justice">
+                            class="card-img-top article-img" alt="Article about access to justice">
                         <div class="card-body">
                             <p class="article-meta mb-1">
-                                FEATURE  |  02 DECEMBER 2025  |  COLOMBO
+                                FEATURE | 02 DECEMBER 2025 | COLOMBO
                             </p>
                             <h5 class="card-title mb-2">
                                 Making justice closer to people: community legal awareness initiatives
@@ -752,12 +742,11 @@
                 <!-- Article 3 -->
                 <div class="col-lg-4 col-md-6">
                     <article class="card article-card h-100 slide-on-scroll from-right">
-                        <img src="img/UNDP Green Inno Challenge (3).jpg"
-                            class="card-img-top article-img"
+                        <img src="img/UNDP Green Inno Challenge (3).jpg" class="card-img-top article-img"
                             alt="Article about youth and human rights">
                         <div class="card-body">
                             <p class="article-meta mb-1">
-                                STORY  |  25 NOVEMBER 2025  |  ISLAND-WIDE
+                                STORY | 25 NOVEMBER 2025 | ISLAND-WIDE
                             </p>
                             <h5 class="card-title mb-2">
                                 Young voices for human rights: building inclusive futures in Sri Lanka
@@ -787,7 +776,7 @@
     </div>
     <!-- Articles End -->
 
-   
+
 
     <!-- Footer Start -->
     <footer class="container-fluid site-footer mt-5 pt-5">
